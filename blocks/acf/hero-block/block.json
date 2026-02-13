@@ -1,0 +1,30 @@
+{
+    "apiVersion": 2,
+    "name": "circus/hero-block",
+    "title": "Hero Block",
+    "category": "formatting",
+    "icon": "cover-image",
+    "description": "Hero section with title, subtitle and background image.",
+    "keywords": [
+        "hero",
+        "header",
+        "banner"
+    ],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "hero-block.php"
+    },
+    "supports": {
+        "mode": true,
+        "anchor": true,
+        "jsx": true
+    },
+    "example": {
+        "attributes": {
+            "mode": "preview",
+            "data": {
+                "is_example": true
+            }
+        }
+    }
+}

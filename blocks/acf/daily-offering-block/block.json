@@ -1,0 +1,31 @@
+{
+    "apiVersion": 2,
+    "name": "circus/daily-offering-block",
+    "title": "Daily Offering Block",
+    "category": "formatting",
+    "icon": "food",
+    "description": "Display daily food offering with CTA boxes",
+    "keywords": [
+        "daily",
+        "offering",
+        "menu",
+        "food"
+    ],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "daily-offering-block.php"
+    },
+    "supports": {
+        "mode": true,
+        "anchor": true,
+        "jsx": true
+    },
+    "example": {
+        "attributes": {
+            "mode": "preview",
+            "data": {
+                "is_example": true
+            }
+        }
+    }
+}

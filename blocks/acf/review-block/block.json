@@ -1,0 +1,32 @@
+{
+    "apiVersion": 2,
+    "name": "circus/review-block",
+    "title": "Review Block",
+    "category": "formatting",
+    "icon": "star-filled",
+    "description": "CTA block encouraging users to share their experience.",
+    "keywords": [
+        "review",
+        "cta",
+        "trust",
+        "recenzija",
+        "povjerenje"
+    ],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "review-block.php"
+    },
+    "supports": {
+        "mode": true,
+        "anchor": true,
+        "jsx": true
+    },
+    "example": {
+        "attributes": {
+            "mode": "preview",
+            "data": {
+                "is_example": true
+            }
+        }
+    }
+}

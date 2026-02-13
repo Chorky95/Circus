@@ -1,0 +1,32 @@
+{
+    "apiVersion": 2,
+    "name": "circus/working-hours-block",
+    "title": "Working Hours Block",
+    "category": "formatting",
+    "icon": "clock",
+    "description": "Display working hours, daily offerings, and lunch times.",
+    "keywords": [
+        "hours",
+        "time",
+        "schedule",
+        "radno vrijeme",
+        "vrijeme"
+    ],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "working-hours-block.php"
+    },
+    "supports": {
+        "mode": true,
+        "anchor": true,
+        "jsx": true
+    },
+    "example": {
+        "attributes": {
+            "mode": "preview",
+            "data": {
+                "is_example": true
+            }
+        }
+    }
+}

@@ -1,0 +1,73 @@
+@use './mixins' as *;
+
+.no-scroll {
+	overflow: hidden;
+}
+
+.blurred {
+	&::before {
+		position: fixed;
+		width: 100vw;
+		height: 100vh;
+		top: 0;
+		left: 0;
+		content: '';
+		background: black;
+		opacity: 0.8;
+		z-index: 99;
+	}
+}
+
+.hidden {
+	opacity: 0;
+}
+
+.col-no-padd {
+	padding: 0;
+}
+
+.no-padd {
+	padding: 0;
+}
+
+.no-margin {
+	margin: 0;
+}
+
+.col-sm-no-offset {
+	@include tablet {
+		margin-left: 0;
+	}
+}
+
+.spacing-tablet {
+	display: none;
+
+	@include tablet {
+		display: block;
+	}
+}
+
+.mobile-reverse {
+	flex-direction: column-reverse;
+
+	@include tablet {
+		flex-direction: row;
+	}
+}
+
+.hide-mobile {
+	display: none;
+
+	@include tablet {
+		display: block;
+	}
+}
+
+.hide-desktop {
+	display: block;
+
+	@include tablet {
+		display: none;
+	}
+}
