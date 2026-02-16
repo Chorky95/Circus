@@ -1,14 +1,14 @@
 {
-    "apiVersion": 2,
-    "name": "circus/hero-block",
+    "name": "acf/hero-block",
     "title": "Hero Block",
+    "description": "A hero section with title, subtitle and background image",
     "category": "formatting",
     "icon": "cover-image",
-    "description": "Hero section with title, subtitle and background image.",
+    "screenshot": "./screenshot.png",
     "keywords": [
         "hero",
-        "header",
-        "banner"
+        "banner",
+        "header"
     ],
     "acf": {
         "mode": "edit",

@@ -1,16 +1,15 @@
 {
-    "apiVersion": 2,
-    "name": "circus/image-content-block",
+    "name": "acf/image-content-block",
     "title": "Image Content Block",
+    "description": "A split layout with content on the left and image on the right",
     "category": "formatting",
-    "icon": "format-image",
-    "description": "Block with image, content, and optional delivery information.",
+    "icon": "align-pull-left",
+    "screenshot": "./screenshot.png",
     "keywords": [
         "image",
         "content",
-        "delivery",
-        "slika",
-        "sadržaj"
+        "split",
+        "layout"
     ],
     "acf": {
         "mode": "edit",
@@ -25,7 +24,15 @@
         "attributes": {
             "mode": "preview",
             "data": {
-                "is_example": true
+                "image_content_title": "Circus",
+                "image_content_text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
+                "image_content_link": {
+                    "title": "Explore",
+                    "url": "#"
+                },
+                "image_content_image": {
+                    "url": "https://via.placeholder.com/800x600/1a1a1a/ffffff?text=Image+Content"
+                }
             }
         }
     }

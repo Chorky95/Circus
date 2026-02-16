@@ -1,5 +1,13 @@
 @use "../variables" as *;
 
 .button {
-  color: black;
+  color: $black;
+  background-color: $yellow;
+  padding: 14px 32px;
+  cursor: pointer;
+  font-family: $ff-secondary;
+  font-weight: $fw-bold;
+  font-size: $fs-16;
+  line-height: normal;
+  text-decoration: none;
 }

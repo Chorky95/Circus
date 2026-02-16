@@ -1,0 +1,59 @@
+@use "../variables/" as *;
+
+.hero-block {
+  position: relative;
+  //   min-height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  padding: 294px 0 286px;
+  margin: 8px;
+
+  &__background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    z-index: 1;
+  }
+
+  &__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+  }
+
+  &__content {
+    position: relative;
+    z-index: 3;
+    text-align: center;
+    color: #ffffff;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__title {
+    color: $text-white;
+    margin-bottom: 32px;
+    text-align: center;
+    width: 100%;
+    max-width: 724px;
+  }
+
+  &__subtitle {
+    color: $text-white;
+    text-align: center;
+    width: 100%;
+    max-width: 568px;
+  }
+}

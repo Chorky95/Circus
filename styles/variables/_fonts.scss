@@ -1,8 +1,5 @@
-// //Font families
-@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-
-$ff-primary: "Lora", sans-serif;
-$ff-secondary: "Poppins", sans-serif;
+$ff-primary: "Poltawski Nowy", sans-serif;
+$ff-secondary: "Satoshi", sans-serif;
 
 // Font sizes
 $fs-9: 9px;
@@ -49,6 +46,7 @@ $fw-regular: 400;
 $fw-medium: 500;
 $fw-semibold: 600;
 $fw-bold: 700;
+$fw-black: 900;
 
 // Line heights
 $lh-12: 12px;
@@ -85,6 +83,7 @@ $lh-47: 47px;
 $lh-48: 48px;
 $lh-49: 49px;
 $lh-56: 56px;
+$lh-59: 59px;
 $lh-60: 60px;
 $lh-64: 64px;
 $lh-63: 63px;

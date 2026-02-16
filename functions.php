@@ -375,15 +375,6 @@ function allow_svg_uploads($mimes)
 }
 add_filter('upload_mimes', 'allow_svg_uploads');
 
-function mytheme_enqueue_fonts()
-{
-    wp_enqueue_style(
-        'poppins-font',
-        'https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap',
-        false
-    );
-}
-add_action('wp_enqueue_scripts', 'mytheme_enqueue_fonts');
 
 // Enqueue theme scripts
 function mytheme_enqueue_scripts()

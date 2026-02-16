@@ -1,0 +1,59 @@
+@use "../variables/" as *;
+
+.image-content-block {
+  //   width: 100%;
+  max-width: 100%;
+  margin: 8px;
+  background-color: $background-secondary;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+    padding: 24px 16px;
+
+    @include tablet {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+
+  &__content {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 24px;
+    padding: 24px 0 0;
+    max-width: 450px;
+    width: 100%;
+
+    @include tablet {
+      padding: 24px 61px 0 32px;
+    }
+  }
+
+  &__title {
+    color: $black;
+  }
+
+  &__text {
+    color: $black;
+  }
+
+  &__image {
+    position: relative;
+    overflow: hidden;
+    max-height: 650px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+  }
+}

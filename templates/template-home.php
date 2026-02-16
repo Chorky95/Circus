@@ -1,14 +1,13 @@
 <?php
 
 /**
- * Template Name: Page Template
+ * Template Name: Homepage Template
  */
 
 get_header();
 
 ?>
 <main class="main" role="main">
-    <!-- <div class="container"> -->
 
     <?php while (have_posts()) : the_post(); ?>
 

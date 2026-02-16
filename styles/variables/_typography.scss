@@ -1,3 +1,47 @@
 @use "./colors" as *;
 @use "./mixins" as *;
 @use "./fonts" as *;
+
+.heading-1 {
+  font-family: $ff-primary;
+  font-weight: $fw-semibold;
+  font-size: $fs-56;
+  line-height: $lh-59;
+
+  @include tablet {
+    font-size: $fs-64;
+  }
+}
+
+.heading-2 {
+  font-family: $ff-primary;
+  font-weight: $fw-medium;
+  font-size: $fs-32;
+  line-height: $lh-32;
+
+  @include tablet {
+    font-size: $fs-40;
+  }
+}
+
+.body-1 {
+  font-family: $ff-secondary;
+  font-weight: $fw-bold;
+  font-size: $fs-16;
+  line-height: normal;
+}
+
+.body-2 {
+  font-family: $ff-secondary;
+  font-weight: $fw-bold;
+  font-size: $fs-13;
+  line-height: normal;
+}
+
+.caption {
+  font-family: $ff-secondary;
+  font-weight: $fw-black;
+  font-size: $fs-12;
+  line-height: normal;
+  letter-spacing: 8%;
+}

@@ -1,11 +1,11 @@
 {
-    "key": "group_695fb7085ef89",
+    "key": "group_69932453ae340",
     "title": "Hero Block",
     "fields": [
         {
-            "key": "field_695fb708bd02b",
-            "label": "Hero Naslov",
-            "name": "hero_title",
+            "key": "field_69932454b752e",
+            "label": "Hero Block Title",
+            "name": "hero_block_title",
             "aria-label": "",
             "type": "text",
             "instructions": "",
@@ -24,9 +24,9 @@
             "append": ""
         },
         {
-            "key": "field_695fb721bd02c",
-            "label": "Hero Podnaslov",
-            "name": "hero_subtitle",
+            "key": "field_69932468b752f",
+            "label": "Hero Block Subtitle",
+            "name": "hero_block_subtitle",
             "aria-label": "",
             "type": "text",
             "instructions": "",
@@ -45,9 +45,9 @@
             "append": ""
         },
         {
-            "key": "field_695fb729bd02d",
-            "label": "Hero Pozadina",
-            "name": "hero_background",
+            "key": "field_69932472b7530",
+            "label": "Hero Block Background Image",
+            "name": "hero_block_background_image",
             "aria-label": "",
             "type": "image",
             "instructions": "",
@@ -76,7 +76,7 @@
             {
                 "param": "block",
                 "operator": "==",
-                "value": "circus\/hero-block"
+                "value": "acf\/hero-block"
             }
         ]
     ],
@@ -90,5 +90,5 @@
     "description": "",
     "show_in_rest": 0,
     "display_title": "",
-    "modified": 1767883611
+    "modified": 1771252463
 }
