@@ -1,0 +1,31 @@
+{
+    "name": "acf/give-me-jokes",
+    "title": "Give Me Jokes",
+    "description": "A block that fetches and displays jokes from an API",
+    "category": "formatting",
+    "icon": "smiley",
+    "screenshot": "./screenshot.png",
+    "keywords": [
+        "jokes",
+        "api",
+        "fun"
+    ],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "give-me-jokes.php"
+    },
+    "supports": {
+        "mode": true,
+        "anchor": true,
+        "jsx": true
+    },
+    "example": {
+        "attributes": {
+            "mode": "preview",
+            "data": {
+                "give_me_jokes_title": "Give me jokes",
+                "give_me_jokes_text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            }
+        }
+    }
+}

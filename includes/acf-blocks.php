@@ -20,6 +20,7 @@ function circus_register_acf_blocks()
 
     register_block_type(__DIR__ . '/../blocks/acf/hero-block');
     register_block_type(__DIR__ . '/../blocks/acf/image-content-block');
+    register_block_type(__DIR__ . '/../blocks/acf/give-me-jokes');
 }
 // Here we call our circus_register_acf_block() function on init.
 add_action('init', 'circus_register_acf_blocks');

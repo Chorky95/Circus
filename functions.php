@@ -116,7 +116,6 @@ add_action('wp_enqueue_scripts', 'circus_enqueue_scripts');
 
 function defer_scripts($tag, $handle, $src)
 {
-
     // The handles of the enqueued scripts we want to defer
     $defer_scripts = [
         'SCRIPT_ID'
@@ -132,39 +131,6 @@ function defer_scripts($tag, $handle, $src)
 
 add_filter('script_loader_tag', 'defer_scripts', 10, 3);
 
-
-/**
- * Add custom scripts to head
- *
- * @return string
- */
-
-function add_gtag_to_head()
-{
-
-    // Check is staging environment
-    if (strpos(get_bloginfo('url'), '.test') !== false) return;
-
-    // Google Analytics
-    $tracking_code = 'UA-*********-1';
-
-?>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=<?php echo $tracking_code; ?>"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-
-        gtag('config', '<?php echo $tracking_code; ?>');
-    </script>
-<?php
-}
-
-add_action('wp_head', 'add_gtag_to_head');
 
 
 
@@ -374,35 +340,3 @@ function allow_svg_uploads($mimes)
     return $mimes;
 }
 add_filter('upload_mimes', 'allow_svg_uploads');
-
-
-// Enqueue theme scripts
-function mytheme_enqueue_scripts()
-{
-    // Swiper CSS
-    wp_enqueue_style(
-        'swiper-css',
-        'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css',
-        array(),
-        '11.0.0'
-    );
-
-    // Swiper JS
-    wp_enqueue_script(
-        'swiper-js',
-        'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js',
-        array(),
-        '11.0.0',
-        true
-    );
-
-    // Your custom JS (depends on Swiper)
-    // wp_enqueue_script(
-    //     'theme-scripts',
-    //     get_template_directory_uri() . '/assets/js/scripts.js', // adjust path!
-    //     array('swiper-js'),
-    //     null,
-    //     true
-    // );
-}
-add_action('wp_enqueue_scripts', 'mytheme_enqueue_scripts');
