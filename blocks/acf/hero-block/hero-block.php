@@ -21,7 +21,7 @@ if ($is_preview && empty($title) && empty($subtitle) && empty($background_image)
 }
 
 // Create block ID and class attributes
-$block_id = 'hero-block-' . $block['id'];
+$block_id = 'hero-' . $block['id'];
 $class_name = 'hero-block';
 if (!empty($block['className'])) {
     $class_name .= ' ' . $block['className'];

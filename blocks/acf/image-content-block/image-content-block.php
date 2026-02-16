@@ -22,7 +22,7 @@ if ($is_preview && empty($title) && empty($text) && empty($link) && empty($image
 }
 
 // Create block ID and class attributes
-$block_id = 'image-content-block-' . $block['id'];
+$block_id = 'image-content-' . $block['id'];
 $class_name = 'image-content-block';
 if (!empty($block['className'])) {
     $class_name .= ' ' . $block['className'];

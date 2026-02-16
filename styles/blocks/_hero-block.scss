@@ -7,8 +7,12 @@
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  padding: 294px 0 286px;
+  padding: 214px 21px 203px;
   margin: 8px;
+
+  @include tablet {
+    padding: 294px 0 286px;
+  }
 
   &__background {
     position: absolute;
