@@ -38,6 +38,14 @@
   line-height: normal;
 }
 
+.body-italic {
+  font-family: $ff-secondary;
+  font-weight: $fw-medium;
+  font-size: $fs-16;
+  line-height: normal;
+  font-style: italic;
+}
+
 .caption {
   font-family: $ff-secondary;
   font-weight: $fw-black;

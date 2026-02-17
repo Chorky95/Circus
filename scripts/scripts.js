@@ -1,5 +1,54 @@
 // console.log("Hello, Circus!");
 
+// Header Mobile Menu Functionality
+document.addEventListener("DOMContentLoaded", function () {
+  const hamburger = document.querySelector(".header__hamburger");
+  const mobileMenu = document.querySelector(".header__mobile-menu");
+  const mobileLinks = document.querySelectorAll(".header__mobile-link");
+  const body = document.body;
+
+  if (hamburger && mobileMenu) {
+    // Toggle mobile menu
+    hamburger.addEventListener("click", function () {
+      const isOpen = hamburger.classList.contains("is-active");
+
+      if (isOpen) {
+        closeMobileMenu();
+      } else {
+        openMobileMenu();
+      }
+    });
+
+    // Close menu when clicking on a link
+    mobileLinks.forEach((link) => {
+      link.addEventListener("click", function () {
+        closeMobileMenu();
+      });
+    });
+
+    // Close menu when clicking outside
+    mobileMenu.addEventListener("click", function (e) {
+      if (e.target === mobileMenu) {
+        closeMobileMenu();
+      }
+    });
+
+    function openMobileMenu() {
+      hamburger.classList.add("is-active");
+      mobileMenu.classList.add("is-open");
+      hamburger.setAttribute("aria-expanded", "true");
+      body.style.overflow = "hidden";
+    }
+
+    function closeMobileMenu() {
+      hamburger.classList.remove("is-active");
+      mobileMenu.classList.remove("is-open");
+      hamburger.setAttribute("aria-expanded", "false");
+      body.style.overflow = "";
+    }
+  }
+});
+
 // Give Me Jokes Block Functionality
 document.addEventListener("DOMContentLoaded", function () {
   const jokesBlocks = document.querySelectorAll(".give-me-jokes");
@@ -38,9 +87,9 @@ document.addEventListener("DOMContentLoaded", function () {
     function createJokeCard(joke) {
       return `
                 <div class="give-me-jokes__joke" data-type="${joke.type}">
-                    <div class="give-me-jokes__joke-type">${joke.type}</div>
-                    <p class="give-me-jokes__joke-setup">${joke.setup}</p>
-                    <p class="give-me-jokes__joke-punchline">${joke.punchline}</p>
+                    <div class="give-me-jokes__joke-type caption">${joke.type}</div>
+                    <p class="give-me-jokes__joke-setup body-1">${joke.setup}</p>
+                    <p class="give-me-jokes__joke-punchline body-italic">${joke.punchline}</p>
                 </div>
             `;
     }

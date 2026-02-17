@@ -6,8 +6,6 @@
 
 require_once 'includes/custom-functions.php';
 require_once 'includes/acf-blocks.php';
-require_once 'includes/custom-post-types.php';
-require_once 'includes/custom-taxonomies.php';
 require_once 'includes/custom-endpoints.php';
 
 /**
@@ -24,27 +22,6 @@ add_action('acf/init', function () {
         ));
     }
 });
-
-/**
- * Add support for useful stuff
- */
-
-if (function_exists('add_theme_support')) {
-
-    // Add support for document title tag
-    add_theme_support('title-tag');
-
-    // Add Thumbnail Theme Support
-    add_theme_support('post-thumbnails');
-    // add_image_size( 'custom-size', 700, 200, true );
-
-    // Add Support for post formats
-    // add_theme_support( 'post-formats', ['post'] );
-    // add_post_type_support( 'page', 'excerpt' );
-
-    // Localisation Support
-    load_theme_textdomain('circus', get_template_directory() . '/languages');
-}
 
 
 /**

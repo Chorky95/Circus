@@ -60,8 +60,8 @@ if (!empty($block['align'])) {
             <?php endif; ?>
 
             <div class="give-me-jokes__filter">
-                <label for="joke-type-filter">FILTER</label>
-                <select id="joke-type-filter" class="js-joke-type-filter">
+                <label for="joke-type-filter" class="caption">FILTER</label>
+                <select id="joke-type-filter" class="js-joke-type-filter body-2">
                     <option value="">Type</option>
                 </select>
             </div>
