@@ -130,6 +130,9 @@ function Edit(_ref) {
                 var open = _ref2.open;
                 return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
                   children: imageUrl ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
+                    style: {
+                      position: "relative"
+                    },
                     children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("img", {
                       src: imageUrl,
                       alt: imageAlt || title
@@ -137,13 +140,19 @@ function Edit(_ref) {
                       onClick: onRemoveImage,
                       isDestructive: true,
                       style: {
-                        marginTop: "10px"
+                        position: "absolute",
+                        top: "50%",
+                        left: "50%",
+                        transform: "translate(-50%, -50%)"
                       },
                       children: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Remove Image", "circus")
                     })]
                   }) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.Button, {
                     onClick: open,
-                    isPrimary: true,
+                    style: {
+                      backgroundColor: "blue",
+                      color: "#fff"
+                    },
                     children: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Select Image", "circus")
                   })
                 });

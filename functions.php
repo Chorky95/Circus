@@ -6,6 +6,7 @@
 
 require_once 'includes/custom-functions.php';
 require_once 'includes/acf-blocks.php';
+require_once 'includes/react-blocks.php';
 require_once 'includes/custom-endpoints.php';
 
 /**

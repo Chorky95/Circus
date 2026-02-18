@@ -55,28 +55,15 @@ function Edit(_ref) {
     style: {
       margin: "0 auto",
       position: "relative",
-      minHeight: "400px"
+      minHeight: "400px",
+      backgroundColor: "#000"
     },
     children: [backgroundImageUrl && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("img", {
       className: "hero-block__background",
       src: backgroundImageUrl,
-      alt: "",
-      style: {
-        position: "absolute",
-        top: 0,
-        left: 0,
-        width: "100%",
-        height: "100%",
-        objectFit: "cover",
-        zIndex: 0
-      }
+      alt: ""
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
       className: "hero-block__content",
-      style: {
-        position: "relative",
-        zIndex: 1,
-        padding: "60px 20px"
-      },
       children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.RichText, {
         tagName: "h1",
         className: "hero-block__title heading-1",
@@ -98,9 +85,6 @@ function Edit(_ref) {
         },
         placeholder: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Enter hero subtitle...", "circus")
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
-        style: {
-          marginTop: "20px"
-        },
         children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.MediaUploadCheck, {
           children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.MediaUpload, {
             onSelect: onSelectImage,
@@ -115,7 +99,10 @@ function Edit(_ref) {
                   children: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Remove Background Image", "circus")
                 }) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.Button, {
                   onClick: open,
-                  isPrimary: true,
+                  style: {
+                    backgroundColor: "blue",
+                    color: "#fff"
+                  },
                   children: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Select Background Image", "circus")
                 })
               });

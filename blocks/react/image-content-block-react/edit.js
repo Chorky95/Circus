@@ -105,18 +105,26 @@ export default function Edit({ attributes, setAttributes, className }) {
                 render={({ open }) => (
                   <div>
                     {imageUrl ? (
-                      <div>
+                      <div style={{ position: "relative" }}>
                         <img src={imageUrl} alt={imageAlt || title} />
                         <Button
                           onClick={onRemoveImage}
                           isDestructive
-                          style={{ marginTop: "10px" }}
+                          style={{
+                            position: "absolute",
+                            top: "50%",
+                            left: "50%",
+                            transform: "translate(-50%, -50%)",
+                          }}
                         >
                           {__("Remove Image", "circus")}
                         </Button>
                       </div>
                     ) : (
-                      <Button onClick={open} isPrimary>
+                      <Button
+                        onClick={open}
+                        style={{ backgroundColor: "blue", color: "#fff" }}
+                      >
                         {__("Select Image", "circus")}
                       </Button>
                     )}

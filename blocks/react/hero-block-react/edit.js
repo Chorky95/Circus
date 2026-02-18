@@ -36,6 +36,7 @@ export default function Edit({ attributes, setAttributes, className }) {
         margin: "0 auto",
         position: "relative",
         minHeight: "400px",
+        backgroundColor: "#000",
       }}
     >
       {backgroundImageUrl && (
@@ -43,22 +44,10 @@ export default function Edit({ attributes, setAttributes, className }) {
           className="hero-block__background"
           src={backgroundImageUrl}
           alt=""
-          style={{
-            position: "absolute",
-            top: 0,
-            left: 0,
-            width: "100%",
-            height: "100%",
-            objectFit: "cover",
-            zIndex: 0,
-          }}
         />
       )}
 
-      <div
-        className="hero-block__content"
-        style={{ position: "relative", zIndex: 1, padding: "60px 20px" }}
-      >
+      <div className="hero-block__content">
         <RichText
           tagName="h1"
           className="hero-block__title heading-1"
@@ -75,7 +64,7 @@ export default function Edit({ attributes, setAttributes, className }) {
           placeholder={__("Enter hero subtitle...", "circus")}
         />
 
-        <div style={{ marginTop: "20px" }}>
+        <div>
           <MediaUploadCheck>
             <MediaUpload
               onSelect={onSelectImage}
@@ -88,7 +77,10 @@ export default function Edit({ attributes, setAttributes, className }) {
                       {__("Remove Background Image", "circus")}
                     </Button>
                   ) : (
-                    <Button onClick={open} isPrimary>
+                    <Button
+                      onClick={open}
+                      style={{ backgroundColor: "blue", color: "#fff" }}
+                    >
                       {__("Select Background Image", "circus")}
                     </Button>
                   )}
