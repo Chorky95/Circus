@@ -1,4 +1,7 @@
 {
     "/assets/js/scripts.min.js": "/assets/js/scripts.min.js",
+    "/blocks/react/give-me-jokes-react/build/index.js": "/blocks/react/give-me-jokes-react/build/index.js",
+    "/blocks/react/hero-block-react/build/index.js": "/blocks/react/hero-block-react/build/index.js",
+    "/blocks/react/image-content-block-react/build/index.js": "/blocks/react/image-content-block-react/build/index.js",
     "/assets/css/style.css": "/assets/css/style.css"
 }

@@ -1753,15 +1753,20 @@ body {
 
 .give-me-jokes {
   background-color: #fff8ef;
-  padding: 80px 40px;
   margin: 8px;
+  padding: 24px 0;
 }
-@media (max-width: 768px) {
+@media (min-width: 49rem) {
   .give-me-jokes {
-    padding: 60px 20px;
+    padding: 64px 0;
   }
 }
-.give-me-jokes__initial, .give-me-jokes__header {
+.give-me-jokes__initial {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
+}
+.give-me-jokes__header {
   text-align: center;
   max-width: 700px;
   margin: 0 auto 40px;

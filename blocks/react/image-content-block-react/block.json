@@ -1,0 +1,57 @@
+{
+    "apiVersion": 3,
+    "name": "circus/image-content-block-react",
+    "title": "Image Content Block (React)",
+    "description": "A split layout with content on the left and image on the right - React version",
+    "category": "formatting",
+    "icon": "align-pull-left",
+    "keywords": [
+        "image",
+        "content",
+        "split",
+        "layout",
+        "react"
+    ],
+    "supports": {
+        "anchor": true,
+        "align": true
+    },
+    "attributes": {
+        "title": {
+            "type": "string",
+            "default": ""
+        },
+        "text": {
+            "type": "string",
+            "default": ""
+        },
+        "linkUrl": {
+            "type": "string",
+            "default": ""
+        },
+        "linkText": {
+            "type": "string",
+            "default": ""
+        },
+        "linkTarget": {
+            "type": "string",
+            "default": ""
+        },
+        "imageUrl": {
+            "type": "string",
+            "default": ""
+        },
+        "imageAlt": {
+            "type": "string",
+            "default": ""
+        },
+        "imageId": {
+            "type": "number",
+            "default": 0
+        }
+    },
+    "textdomain": "circus",
+    "render": "file:./render.php",
+    "style": "file:../../../assets/css/style.css",
+    "editorStyle": "file:../../../assets/css/style.css"
+}

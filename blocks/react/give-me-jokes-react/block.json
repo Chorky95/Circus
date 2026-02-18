@@ -1,0 +1,40 @@
+{
+    "apiVersion": 3,
+    "name": "circus/give-me-jokes-react",
+    "title": "Give Me Jokes (React)",
+    "description": "A block that fetches and displays jokes from an API - React version",
+    "category": "formatting",
+    "icon": "smiley",
+    "keywords": [
+        "jokes",
+        "api",
+        "fun",
+        "react"
+    ],
+    "supports": {
+        "anchor": true,
+        "align": true
+    },
+    "attributes": {
+        "title": {
+            "type": "string",
+            "default": ""
+        },
+        "text": {
+            "type": "string",
+            "default": ""
+        },
+        "getJokesButtonLabel": {
+            "type": "string",
+            "default": "Get Jokes"
+        },
+        "loadMoreButtonLabel": {
+            "type": "string",
+            "default": "Load More"
+        }
+    },
+    "textdomain": "circus",
+    "render": "file:./render.php",
+    "style": "file:../../../assets/css/style.css",
+    "editorStyle": "file:../../../assets/css/style.css"
+}

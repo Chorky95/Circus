@@ -2,14 +2,18 @@
 
 .give-me-jokes {
   background-color: $background-secondary;
-  padding: 80px 40px;
   margin: 8px;
+  padding: 24px 0;
 
-  @media (max-width: 768px) {
-    padding: 60px 20px;
+  @include tablet {
+    padding: 64px 0;
   }
 
-  &__initial,
+  &__initial {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto;
+  }
   &__header {
     text-align: center;
     max-width: 700px;

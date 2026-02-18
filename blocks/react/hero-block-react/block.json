@@ -1,0 +1,40 @@
+{
+    "apiVersion": 3,
+    "name": "circus/hero-block-react",
+    "title": "Hero Block (React)",
+    "description": "A hero section with title, subtitle and background image - React version",
+    "category": "formatting",
+    "icon": "cover-image",
+    "keywords": [
+        "hero",
+        "banner",
+        "header",
+        "react"
+    ],
+    "supports": {
+        "anchor": true,
+        "align": true
+    },
+    "attributes": {
+        "title": {
+            "type": "string",
+            "default": ""
+        },
+        "subtitle": {
+            "type": "string",
+            "default": ""
+        },
+        "backgroundImageUrl": {
+            "type": "string",
+            "default": ""
+        },
+        "backgroundImageId": {
+            "type": "number",
+            "default": 0
+        }
+    },
+    "textdomain": "circus",
+    "render": "file:./render.php",
+    "style": "file:../../../assets/css/style.css",
+    "editorStyle": "file:../../../assets/css/style.css"
+}
