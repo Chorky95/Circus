@@ -1,5 +1,5 @@
 {
-    "apiVersion": 3,
+    "apiVersion": 2,
     "name": "acf/image-content-block",
     "title": "Image Content Block",
     "description": "A split layout with content on the left and image on the right",

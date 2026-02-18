@@ -1,5 +1,5 @@
 {
-    "apiVersion": 3,
+    "apiVersion": 2,
     "name": "acf/give-me-jokes",
     "title": "Give Me Jokes",
     "description": "A block that fetches and displays jokes from an API",
